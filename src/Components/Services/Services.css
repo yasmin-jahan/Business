@@ -1,0 +1,220 @@
+/* SERVICE-SECTION-STARTS */
+.service_section {
+    padding: 110px 0 50px;
+    background: url('../../assets/banner/banner.png') no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+
+.service_section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    min-height: 100%;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    background-color: var(--dark-layer-color);
+    pointer-events: none;
+}
+
+.service_box_wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 70px;
+}
+
+.service_box {
+    width: calc(100% / 3 - 28px);
+    padding: 40px 30px;
+    border-radius: 20px;
+    background-color: var(--bg-dark-color);
+    margin-bottom: 42px;
+    position: relative;
+    z-index: 3;
+ height: 100%;
+}
+
+.service_box .number {
+    position: absolute;
+    font-size: 60px;
+    line-height: 60px;
+    right: 40px;
+    top: 30px;
+    opacity: .07;
+    transition: .3s ease-in-out;
+}
+
+.service_box .service_icon {
+    font-size: 32px;
+    width: 70px;
+    height: 70px;
+    line-height: 70;
+    border-radius: 50%;
+    color: var(--primary-color);
+    background-color: var(--primary-bg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.service_box .service_icon.green_icon {
+    color: var(--green-color);
+    background-color: var(--green-color-bg);
+}
+
+.service_box .service_icon.blue_icon {
+    color: var(--blue-color);
+    background-color: var(--blue-color-bg);
+}
+
+.service_content h5 {
+    font-weight: 500;
+    color: var(--white-color);
+    font-size: 24px;
+}
+
+.service_content p {
+    font-size: 17px;
+    color: var(--font-color);
+    font-weight: 500;
+}
+
+.service_content .read {
+    text-decoration: underline;
+    font-size: 15px;
+    font-weight: 500;
+    color: var(--white-color);
+    margin-top: 30px;
+    display: inline-block;
+    transition: all .3s ease-in-out;
+}
+.service_content .read:hover{
+    color: var(--primary-nav-color);
+}
+/* SERVICE-SECTION-ENDS */
+
+
+
+@media only screen and (max-width:1400px){
+    .service_box {
+    width: calc(100% / 3 - 15px);
+    padding: 40px 25px;
+    margin-bottom: 20px;
+}
+}
+
+@media only screen and (max-width:1199px){
+    .service_box {
+    width: calc(100% / 2 - 17px);
+    padding: 40px 25px;
+    margin-bottom: 30px;
+}
+}
+
+@media only screen and (max-width:991px) {
+    .service_section {
+        padding: 80px 0;
+    }
+
+    .service_box {
+        width: calc(100% / 2 - 10px);
+         margin-bottom: 20px;
+    }
+}
+
+@media only screen and (max-width:767px) {
+        .service_section {
+        padding: 60px 0;
+    }
+    .service_box_wrapper {
+        flex-direction: column;
+    }
+
+    .service_box {
+        width: 100%;
+    }
+}
+
+
+@media only screen and (max-width:575px) {
+        .service_section {
+        padding: 50px 0;
+    }
+    .service_content h5 {
+    font-size: 22px;
+}
+.service_content p {
+    font-size: 15px;
+}
+.service_box .service_icon {
+    font-size: 25px;
+    width: 63px;
+    height: 63px;
+    margin-bottom: 20px;
+}
+.service_box .number {
+font-size: 55px;
+}
+}
+
+@media only screen and (max-width:480px){
+    .service_box_wrapper {
+    margin-top: 50px;
+}
+    .service_box .number {
+        font-size: 50px;
+    }
+        .service_box .service_icon {
+        font-size: 22px;
+        width: 60px;
+        height: 60px;
+    }
+        .service_content h5 {
+        font-size: 20px;
+        margin-bottom: 8px;
+    }
+    .service_content .read {
+    font-size: 14px;
+    margin-top: 20px;
+}
+    .service_box {
+        padding: 30px 20px;
+        margin-bottom: 14px;
+    }
+        .service_content p {
+        font-size: 14px;
+    }
+}
+
+@media only screen and (max-width:360px){
+        .service_section {
+        padding: 30px 0;
+    }
+        .service_content h5 {
+        font-size: 18px;
+    }
+        .service_content p {
+        font-size: 13px;
+    }
+    .service_box {
+        padding: 28px 18px;
+        margin-bottom: 14px;
+    }
+        .service_content .read {
+        font-size: 13px;
+    }   
+        .service_box .number {
+        font-size: 46px;
+    }
+    .service_box .service_icon {
+        font-size: 20px;
+        width: 55px;
+        height: 55px;
+        margin-bottom: 12px;
+    }
+}

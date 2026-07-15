@@ -77,21 +77,6 @@ a{
   margin-top: 70px;
 }
 
-  /* .btn{
-    padding: 12px 35px;
-    font-size: 16px;
-    border-radius: 30px;
-    font-weight: 600;
-    box-shadow: 0 7px 14px rgb(16, 16, 16);
-    outline-offset: 0px;
-    color: var(--white-color);
-    border: 1px solid var(--primary-color);
-    cursor: pointer;
-    background-color: var(--primary-color);
-    transition: all .3s ease-in-out;
-    display: inline-block;
-  } */
-
     .btn{
       position: relative;
     padding: 14px 35px;
@@ -99,8 +84,6 @@ a{
     border-radius: 30px;
     font-weight: 600;
     box-shadow: 0 7px 14px rgb(16, 16, 16);
-    
-    /* outline-offset: 0px; */
     color: var(--white-color);
     border: none;
     cursor: pointer;

@@ -6,30 +6,6 @@ import { faLaptopCode, faChartBar, faCopy, faMarker, faUserGear, faCoins } from 
 
 function Services() {
 
-//    useEffect(() => {
-
-//     const matchHeight = (selector) => {
-//         const elements = document.querySelectorAll(selector);
-
-//         let max = 0;
-
-//         elements.forEach(el => {
-//             el.style.height = 'auto';
-//         });
-
-//         elements.forEach(el => {
-//             max = Math.max(max, el.offsetHeight);
-//         });
-
-//         elements.forEach(el => {
-//             el.style.height = `${max}px`;
-//         });
-//     };
-
-//     matchHeight('.service_content h5');
-//     matchHeight('.service_content p');
-
-// }, []);
 
 const getItemsPerRow = () => {
     if (window.innerWidth <= 576) return 1;

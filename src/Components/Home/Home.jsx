@@ -26,9 +26,6 @@ function Home() {
                                     <h1 className='title'>WE PROMOTE YOUR <span>BUSINESS</span></h1>
                                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe minima ea esse optio maiores. Est nemo commodi quis modi officia!</p>
                                 </div>
-                                {/* <div className="hero_btn btn_wrapper">
-                                    <a href="/" className='btn'>Get Started <span></span> </a>
-                                </div> */}
                                 <div className="hero_btn btn_wrapper">
                                     <Button href="/" className='btn'>Get Started</Button>
                                 </div>

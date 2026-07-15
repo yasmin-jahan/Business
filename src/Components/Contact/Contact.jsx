@@ -31,9 +31,7 @@ function Contact() {
                                 <div className="input_wrapper">
                                     <textarea placeholder='Write a Message...'></textarea>
                                 </div>
-                                {/* <div className="btn_wrapper contact_btn">
-                            <button type='submit' className='btn'>Submit</button>
-                        </div> */}
+
                                 <div className="btn_wrapper contact_btn">
                                     <Button onClick={() => alert("Clicked!")} className='btn' type='submit'>
                                         Click Me

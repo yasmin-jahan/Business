@@ -642,3 +642,10 @@
         font-size: 13px;
     }
 }
+
+@media only screen and (max-width:320px) {
+    .about_img {
+        height: 390px;
+    }
+
+}

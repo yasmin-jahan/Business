@@ -1,9 +1,9 @@
-import React from 'react'
+import React, {useState, useEffect} from 'react'
 import './Footer.css'
 import FooterLogo from '../../assets/logo/logo.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faFacebookF, faInstagram, faLinkedinIn, faXTwitter, faYoutube, faGithub } from '@fortawesome/free-brands-svg-icons';
-import { faLocationDot, faPhone, faEnvelope, faClock, } from '@fortawesome/free-solid-svg-icons';
+import { faLocationDot, faPhone, faEnvelope, faClock, faArrowUp} from '@fortawesome/free-solid-svg-icons';
 
 function Footer() {
 
@@ -18,6 +18,30 @@ function Footer() {
     const faXTwitterIcon = <FontAwesomeIcon icon={faXTwitter} />
     const faYoutubeIcon = <FontAwesomeIcon icon={faYoutube} />
     const faGithubIcon = <FontAwesomeIcon icon={faGithub} />
+    const faArrowUpIcon = <FontAwesomeIcon icon={faArrowUp} />
+
+   //STATE
+   const [isVisible, setIsVisible] = useState(false);
+   
+   const scrollToTop = () => {
+    window.scrollTo({
+        top:0,
+        behavior:"smooth"
+    })
+   }
+
+   const listenToScroll = () => {
+    let heightToHidden = 250;
+    const windowScroll = document.body.scrollTop || document.documentElement.scrollTop;
+
+    (windowScroll > heightToHidden) ? setIsVisible(true) :setIsVisible(false);
+
+   }
+
+   useEffect(() => {
+    window.addEventListener("scroll", listenToScroll);
+   })
+
 
     return (
         <>
@@ -87,6 +111,15 @@ function Footer() {
                     </div>
                 </div>
             </footer>
+
+            {/* SCROLL TO TOP */}
+            { isVisible && (
+                     <div className="scroll_top" onClick={scrollToTop}>
+                {faArrowUpIcon}
+            </div>
+                ) }
+            
+           
         </>
     )
 }
